@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: whoami && pwd && echo "Hello World!"
+          command: whoami && pwd && echo "Hello World!" && cat /etc/os-release
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
